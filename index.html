@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Letter For You Only KC❤️</title>
+    <style>
+        /* Styling for Part 2 */
+        .yes-page {
+            display: none;
+            background: #ffe3e3;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out forwards;
+            text-align: center;
+        }
+    
+        .header_text {
+            font-size: 2.8em;
+            color: #ff3366;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+    
+        .aesthetic-heading {
+            font-size: 2.2em;
+            color: #ff4081;
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+    
+        .aesthetic-text {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+    
+        .highlight {
+            color: #ff4081;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+    
+        .simple-button {
+            font-size: 1.3em;
+            padding: 15px 25px;
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 25px;
+        }
+    
+        .simple-button:hover {
+            background-color: #e0356b;
+            transform: scale(1.05);
+        }
+    
+        .lyrics-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 1.2em;
+            display: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+        }
+    
+        .corner-gif {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            opacity: 0.8;
+        }
+    
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+    
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+    
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+    
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+    
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
+            }
+        }
+    </style>
+    <style>
+        /* CSS */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9e3e3;
+            font-family: 'Arial', sans-serif;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #d32f2f;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .yes-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .no-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .gif_container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .header_text {
+            font-size: 3em;
+            color: #d32f2f;
+        }
+
+        .gif_container img {
+            width: 100%; 
+            max-width: 500px; 
+            height: auto; 
+        }
+
+        /* Simple Button for lyrics */
+        .simple-button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .simple-button:hover {
+            background-color: #e0356b;
+        }
+
+        /* Style for displaying lyrics */
+        .lyrics-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff3f3;
+            border-radius: 8px;
+            width: 70%;
+            max-width: 600px;
+            text-align: left;
+            font-size: 1.2em;
+            display: none; /* Hidden by default */
+            margin-left: auto;
+            margin-right: auto;
+            position: relative; /* Necessary for absolute positioning */
+        }
+
+        /* Position GIFs in the corners */
+        .lyrics-container .corner-gif {
+            position: absolute;
+            width: 50px; /* Set the size of the GIF */
+            height: 50px; /* Set the size of the GIF */
+        }
+
+        /* Top-left corner */
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        /* Top-right corner */
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        /* Bottom-left corner */
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Bottom-right corner */
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Hide parts of the page initially */
+        .yes-page {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Part 1: Main page where user interacts -->
+    <div class="container" id="mainPage">
+        <h1>HAPPY VAELNTINES DAY PRE!❤️</h1>
+        <P> LAB MO BA ME? HAHAHA
+        </P>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+
+<!-- Part 2: Knew you would say yes page -->
+<div class="container yes-page" id="yesPage">
+    <h1 class="header_text">Knew you would say yes!</h1>
+
+    <h3 class="aesthetic-heading">ALWAYS REMEMBER: </h3>
+    <p class="aesthetic-text">YOU ARE BEAUTIFUL.</p>
+    <p class="aesthetic-text">YOU ARE WORTHY.</p>
+    <p class="aesthetic-text">YOU ARE IMPORTANT.</p>
+    <p class="aesthetic-text">YOU ARE SPECIAL.</p>
+    <p class="aesthetic-text">YOU ARE UNIQUE.</p>
+    <p class="aesthetic-text">YOU ARE TALENTED.</p>
+    <p class="aesthetic-text highlight">AND YOU ARE IRREPLACEABLE.❤️❤️❤️</p>
+
+    <div class="gif_container">
+        <img src="https://media.giphy.com/media/00JQnjpFenO4YEyuSz/giphy.gif?cid=ecf05e47rkn3lvbmg7vvgyvshk0ipqj7qktnq06s8t6zsa0m&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Celebration GIF">
+    </div>
+
+    <!-- Simple button for lyrics -->
+    <button class="simple-button" onclick="showLyrics()">Click here for the lyrics</button>
+
+    <!-- Lyrics Container -->
+    <div id="lyricsContainer" class="lyrics-container">
+        <h2>Lyrics:</h2>
+        <p>You're my best friend, I'll love you forever</p>
+        <p>We could be the greatest</p>
+        <p>It doesn't matter if we're never rich or famous</p>
+        <p>High all the time</p>
+        <p>High all the time</p>
+        <p>I wanna be high all the time</p>
+        <p>Would you come with me?</p>
+        <p>If you can just let me know if it's okay</p>
+        <p>To call you when I'm lonely</p>
+
+        <!-- Added GIFs in every corner -->
+        <img class="corner-gif top-left" src="https://media.giphy.com/media/9NO3yxexkKEzKfblSD/giphy.gif?cid=790b7611ji1p7xa959le3nemjurpry2huno49d76zmrld3e9&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Corner GIF">
+        <img class="corner-gif top-right" src="https://media.giphy.com/media/9NO3yxexkKEzKfblSD/giphy.gif?cid=790b7611ji1p7xa959le3nemjurpry2huno49d76zmrld3e9&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Corner GIF">
+        <img class="corner-gif bottom-left" src="https://media.giphy.com/media/9NO3yxexkKEzKfblSD/giphy.gif?cid=790b7611ji1p7xa959le3nemjurpry2huno49d76zmrld3e9&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Corner GIF">
+        <img class="corner-gif bottom-right" src="https://media.giphy.com/media/9NO3yxexkKEzKfblSD/giphy.gif?cid=790b7611ji1p7xa959le3nemjurpry2huno49d76zmrld3e9&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Corner GIF">
+    </div>
+</div>
+
+
+    <!-- Audio Element (Online Music) -->
+    <audio id="backgroundMusic" src="c:\Users\mhelrhic\Downloads\The Neighbourhood - You Get Me So High (Official Audio) [jCSvOtUaI8s].mp3" preload="auto"></audio>
+
+    <script>
+        // JavaScript
+        const messages = [
+            "Are you sure?",
+            "Really sure??",
+            "Are you positive?",
+            "Pookie please...",
+            "Just think about it!",
+            "If you say no, I will be really sad...",
+            "I will be very sad...",
+            "I will be very very very sad...",
+            "Ok fine, I will stop asking...",
+            "Just kidding, say yes please! ❤️"
+        ];
+
+        let messageIndex = 0;
+
+        // Play the music when the user clicks any button, but prevent restart if it's already playing
+        function playMusic() {
+            const audio = document.getElementById('backgroundMusic');
+            if (audio.paused) {
+                audio.currentTime =  112;  // Start the music from 20 seconds
+                audio.play();  // Play the audio
+            }
+        }
+
+        function handleNoClick() {
+            const noButton = document.querySelector('.no-button');
+            const yesButton = document.querySelector('.yes-button');
+            noButton.textContent = messages[messageIndex];
+            messageIndex = (messageIndex + 1) % messages.length;
+            const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = `${currentSize * 1.5}px`;
+            
+            playMusic();  // Play the music when the user clicks 'No'
+        }
+
+        function handleYesClick() {
+            // Hide the main page and show the "Yes" page
+            document.getElementById('mainPage').style.display = 'none';
+            document.getElementById('yesPage').style.display = 'block';
+
+            playMusic();  // Play the music when the user clicks 'Yes'
+        }
+
+        function showLyrics() {
+            // Toggle the visibility of the lyrics
+            const lyricsContainer = document.getElementById('lyricsContainer');
+            lyricsContainer.style.display = lyricsContainer.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Optional update checking script
+        (async function checkForUpdates() {
+            const currentVersion = "1.0";
+            const versionUrl = "https://raw.githubusercontent.com/ivysone/Will-you-be-my-Valentine-/main/version.json"; 
+
+            try {
+                const response = await fetch(versionUrl);
+                if (!response.ok) {
+                    console.warn("Could not fetch version information.");
+                    return;
+                }
+                const data = await response.json();
+                const latestVersion = data.version;
+                const updateMessage = data.updateMessage;
+
+                if (currentVersion !== latestVersion) {
+                    alert(updateMessage);
+                } else {
+                    console.log("You are using the latest version.");
+                }
+            } catch (error) {
+                console.error("Error checking for updates:", error);
+            }
+        })();
+    </script>
+</body>
+</html>
